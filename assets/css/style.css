@@ -20,6 +20,46 @@ header img {
     padding-top: 10px;
 }
 
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #9a9225;
+    margin: 20px;
+    border: solid 2px #fff;
+    border-radius: 5px;
+
+}
+
+.select-boxes {
+    display: flex;
+    width: 100%;
+    background-color: #9a9225;
+    height: 90%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+select:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+select {
+    font-family: 'Major Mono Display', monospace;
+    background-color: #303030;
+    color: #fff;
+    font-size: 1em;
+    height: 5vh;
+    text-align: center;
+    padding: 10px;
+}
+
 footer {
   text-align: center;
   margin-bottom: 10px;
