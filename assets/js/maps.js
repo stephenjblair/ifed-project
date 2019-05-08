@@ -182,4 +182,12 @@ var map, places, infoWindow;
         } else {
           document.getElementById('locator').placeholder = 'Enter a city';
         }
+      } 
+      // Search for POI's from the dropdown within the viewpoint of the map.
+      function searchPoints() {
+        search = {
+          bounds: map.getBounds(),
+          types: [document.getElementById('points').value]
+        };
+        searchNearby();
       }      
