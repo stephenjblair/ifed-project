@@ -72,6 +72,9 @@ input {
   min-width: 150px;
 }
 
+#points {
+  min-width: 25vw;
+}
 
 footer {
   text-align: center;
