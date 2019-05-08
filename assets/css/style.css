@@ -60,6 +60,19 @@ select {
     padding: 10px;
 }
 
+input {
+  font-family: 'Major Mono Display', monospace;
+  background-color: #303030;
+  color: #fff;
+  font-size: 1em;
+  height: 5vh;
+  text-align: justify;
+  border-radius: 5px;
+  margin-left: 50px;
+  min-width: 150px;
+}
+
+
 footer {
   text-align: center;
   margin-bottom: 10px;
