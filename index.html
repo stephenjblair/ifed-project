@@ -4,14 +4,14 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="style.css" type="text/css"/>
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
       <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
       <title>Party Safari</title>
    </head>
    <body>
       <header>
          <h1>Party Safari</h1>
-         <img src="img/giraffe2.png" height="120">
+         <img src="assets/images/giraffe2.png" height="120">
       </header>
       <div class="select-container">
          <div class="select-boxes">
@@ -43,7 +43,7 @@
          </div>
          <div class="select-boxes">
             <h4>Point of Interest</h4>
-            <select id="dress" onchange="searchStyle()">
+            <select id="points" onchange="searchPoints()">
                <option value="bar">Bars</option>
                <option value="night_club">Clubs</option>
                <option value="hair_care">Hair Salons</option>
@@ -96,6 +96,6 @@
       <footer>Copyright Party Safari 2019</footer>
       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWop2NAtsKGMAtYkbS4jpsXiV5YSji-Ik&libraries=places&callback=initMap"></script>
-      <script src="js/maps.js"></script>
+      <script src="assets/js/maps.js"></script>
    </body>
 </html>
