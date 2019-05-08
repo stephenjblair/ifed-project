@@ -76,11 +76,6 @@ input {
   min-width: 25vw;
 }
 
-footer {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .map-box {
     display: flex;
     height: 53vh;
@@ -93,3 +88,41 @@ footer {
     border-radius: 5px;
 
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.boxes {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: #303030;
+    border: solid 2px #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+
+}
+.inner-boxes {
+    width: 100%;
+    background-color: #9a9225;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.inner-boxes h4 {
+    text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
