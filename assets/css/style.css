@@ -245,4 +245,10 @@ footer {
 	select {
 		min-width: 0px;
 	}
+	#country {
+		height: 50px;
+	}
+	#points {
+		height: 50px;
+	}
 }

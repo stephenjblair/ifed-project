@@ -1,7 +1,6 @@
 # Interactive Front End Development Project 02  
 This project is called 'Party Safari'. A simple, one-page application that integrates the Google Maps and Google Places APIs to allow the user to plan a night out in a city of their choice.
 
-[Party Safari App](src="img/partsafari.png")
 
 ## User Stories
 
@@ -80,7 +79,16 @@ From line 43, column 1; to line 43, column 9
 * [CSS](https://jigsaw.w3.org/css-validator/) – W3 Schools CSS validator. To check for syntax errors. No errors were found.
 * [JavaScript](https://developers.google.com/web/tools/chrome-devtools/console/) – console via Chrome developer Tools. To check for any scripting errors.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) - To check cross-device compatibility. To trial and error styles and design options in the quickest manner possible.
-* [Responsinator](http://www.responsinator.com/?url=http%3A%2F%2Fstephenjblair.github.io%2Fucd-project) - To further check cross device compatibility.
+* [Responsinator](http://www.responsinator.com/?url=stephenjblair.github.io%2Fifed-project%2F) - To check cross-device compatibility. To trial and error styles and design options in the quickest manner possible. The following devices were tested via the device toolbar:  
+Mobiles  
+Pixel 2/XL
+iPhone 5/SE/6/7/8
+iPhone 6/7/8+
+iPhone X
+Galaxy S5/S9/S9+  
+Tablets  
+iPad/iPad Pro  
+
 * [JS Hint](https://www.jshint.com) - To detect errors and potential problems within the Javascript code.
 
 * Result
@@ -121,14 +129,21 @@ Four unused variables
 195	searchParty
 203	searchHotels
 
+## Manual Testing
 
-### Browser Compatibility
+## User Story Testing
 
-
-
+1.	As a user, I want to be able to choose any city around the world to plan a night out.  
+- Users are presented with a simple, one-page application and given a select menu to choose from the most popular
+countries or they can simply choose 'All'. When the user selects one of the option values for the popular countries the map autozooms over that country. Cities are then suggested as the user would intuitively navigate to the 'Choose A City' section which autocompletes suggested cities as the user begins to type. This process is achieved, firstly, via the `autocomplete` function  then via the `onPlaceChanged`in the Google Maps API. Both were tested extensively for their functionality. Trial and error was used for suitable zoom factors for each.
+2.	As a user, I want to be presented with various points of interest that I might need to see to make my night a success. This should include the obvious bars and clubs that I may visit and also various shopping options, beauty salons and hair salons should I want to prepare my look for my night. I also want to be able to see hotels if I am travelling to that city and wish to stay over.
+- 
+3.	As I user, once I have chosen the country and city I am interested in, as I select my point of interest I want to see these populated on the map and the results presented in a simple list.
+4.	As a user, I want a clean and simple interface which is easy to navigate.  
+5.	
 ## Deployment
 
-The site is deployed live via GitHub Pages, directly from the master branch, and can be viewed [here](https://stephenjblair.github.io/ucd-project/).
+The site is deployed live via GitHub Pages, directly from the master branch, and can be viewed [here](https://stephenjblair.github.io/ifed-project/).
 
 ## Credits
 ### Content
