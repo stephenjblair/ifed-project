@@ -26,7 +26,7 @@ I decided that the map should by styled as a night time theme to fit in with the
 * Input element to enter city, which autocompletes via the Google Maps API.
 * Auto zoom to central point of city of interest.
 * Point of interest select menu.
-* Auto populate markers on map for point of area chosen.
+* Auto populate markers on map for POI chosen.
 * Auto populate results of POI into a separate list in the results box.
 
 ## Features Left to Implement
@@ -135,12 +135,12 @@ Four unused variables
 
 1.	As a user, I want to be able to choose any city around the world to plan a night out.  
 - Users are presented with a simple, one-page application and given a select menu to choose from the most popular
-countries or they can simply choose 'All'. When the user selects one of the option values for the popular countries the map autozooms over that country. Cities are then suggested as the user would intuitively navigate to the 'Choose A City' section which autocompletes suggested cities as the user begins to type. This process is achieved, firstly, via the `autocomplete` function  then via the `onPlaceChanged`in the Google Maps API. Both were tested extensively for their functionality. Trial and error was used for suitable zoom factors for each.
+countries or they can simply choose 'All'. When the user selects one of the option values for the popular countries the map autozooms over that country. Cities are then suggested as the user would intuitively navigate to the 'Choose A City' section which autocompletes suggested cities as the user begins to type. This process is achieved, firstly, via the `autocomplete` function  then via the `onPlaceChanged`in the Google Maps API. Both were manually tested for their functionality by following the common path through the site and monitoring for any errors via Chrome Dev Tools JS Console. Trial and error was used for suitable zoom factors for each.
 2.	As a user, I want to be presented with various points of interest that I might need to see to make my night a success. This should include the obvious bars and clubs that I may visit and also various shopping options, beauty salons and hair salons should I want to prepare my look for my night. I also want to be able to see hotels if I am travelling to that city and wish to stay over.
-- 
+- Users are presented with a simple select list of 8 points of interest that fit in with the site's theme. Upon selecting the POI, the `searchPoints` function is called and tells the Google Places API to find the POIs within the bounds of the map. This was tested by ensuring that firstly the option values were entered exactly as per the API documentation. Secondly, that the `select` `id="points"` was passed correctly to the `searchPoints` function and thirdly, by manual back and forth testing of each value whilst monitoring Chrome Dev Tools JS Console to check for any errors or issues.  
 3.	As I user, once I have chosen the country and city I am interested in, as I select my point of interest I want to see these populated on the map and the results presented in a simple list.
 4.	As a user, I want a clean and simple interface which is easy to navigate.  
-5.	
+
 ## Deployment
 
 The site is deployed live via GitHub Pages, directly from the master branch, and can be viewed [here](https://stephenjblair.github.io/ifed-project/).
