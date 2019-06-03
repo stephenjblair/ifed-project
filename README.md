@@ -79,15 +79,15 @@ From line 43, column 1; to line 43, column 9
 * [CSS](https://jigsaw.w3.org/css-validator/) – W3 Schools CSS validator. To check for syntax errors. No errors were found.
 * [JavaScript](https://developers.google.com/web/tools/chrome-devtools/console/) – console via Chrome developer Tools. To check for any scripting errors.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) - To check cross-device compatibility. To trial and error styles and design options in the quickest manner possible.
-* [Responsinator](http://www.responsinator.com/?url=stephenjblair.github.io%2Fifed-project%2F) - To check cross-device compatibility. To trial and error styles and design options in the quickest manner possible. The following devices were tested via the device toolbar:  
-Mobiles  
-Pixel 2/XL
-iPhone 5/SE/6/7/8
-iPhone 6/7/8+
-iPhone X
-Galaxy S5/S9/S9+  
-Tablets  
-iPad/iPad Pro  
+* [Responsinator](http://www.responsinator.com/?url=stephenjblair.github.io%2Fifed-project%2F) - To check cross-device compatibility. To trial and error styles and design options in the quickest manner possible. The following devices were tested via the device toolbar:    
+Mobiles    
+Pixel 2/XL  
+iPhone 5/SE/6/7/8  
+iPhone 6/7/8+  
+iPhone X  
+Galaxy S5/S9/S9+    
+Tablets    
+iPad/iPad Pro    
 
 * [JS Hint](https://www.jshint.com) - To detect errors and potential problems within the Javascript code.
 
@@ -130,6 +130,45 @@ Four unused variables
 203	searchHotels
 
 ## Manual Testing
+
+* Drop down select menu to choose country. 
+1. Check size  of elementis suitable and responsive across devices.
+2. Check media query is triggered to alter select text on smaller devices.
+3. Check option values for countries are congruent as within `var countries` in Google Maps API.   
+
+* Auto zoom to country of interest.
+1. Check initMap function is being called sucessfully with no console errors.
+2. Check default country is set to UK.
+3. Trial and error map zoom rates for suitability.  
+4. Test each option value navigates to its relevant country.
+5. Test 'All' will result in a world map being displayed.
+6. Check size of element is suitable across devices.
+7. Check media query is triggered to resize element on smaller devices.
+
+* Input element to enter city, which autocompletes via the Google Maps API.
+1. Check element id `locator` in index.html is passed to `autocomplete` function correctly in maps.js.
+2. Check console for errors.
+3. Check size of element is suitable across devices.
+4. Check media query is triggered to resize element on smaller devices.
+
+* Auto zoom to central point of city of interest.
+* Point of interest select menu.
+* Auto populate markers on map for POI chosen.
+* Auto populate results of POI into a separate list in the results box.
+
+*General
+
+1. Page loads quickly across browsers and devices.
+2. Colours and styling work well together and fit with the them of the site.
+3. All elements checked for resposniveness across the following devices:
+Mobiles    
+Pixel 2/XL  
+iPhone 5/SE/6/7/8  
+iPhone 6/7/8+  
+iPhone X  
+Galaxy S5/S9/S9+    
+Tablets    
+iPad/iPad Pro    
 
 ## User Story Testing
 
