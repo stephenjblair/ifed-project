@@ -152,22 +152,28 @@ Four unused variables
 4. Check media query is triggered to resize element on smaller devices.
 
 * Auto zoom to central point of city of interest.
+1. Check element id `locator` in index.html is passed to `onPlaceChanged` function correctly in maps.js.
+2. Check console for errors.
+3. Trial and error map zoom rates for suitability.
+4. Check size of element is suitable across devices.
+5. Check media query is triggered to resize element on smaller devices.
+
 * Point of interest select menu.
 * Auto populate markers on map for POI chosen.
 * Auto populate results of POI into a separate list in the results box.
 
 *General
 
-1. Page loads quickly across browsers and devices.
-2. Colours and styling work well together and fit with the them of the site.
+1. Check page loads quickly across browsers and devices.
+2. Trial and error colours and styling that work well together and fit with the theme of the site.
 3. All elements checked for resposniveness across the following devices:
-Mobiles    
+### Mobiles    
 Pixel 2/XL  
 iPhone 5/SE/6/7/8  
 iPhone 6/7/8+  
 iPhone X  
 Galaxy S5/S9/S9+    
-Tablets    
+### Tablets    
 iPad/iPad Pro    
 
 ## User Story Testing
