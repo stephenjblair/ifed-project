@@ -129,21 +129,22 @@ Four unused variables
 195	searchParty
 203	searchHotels
 
-## Manual Testing
+## Manual Testing of Features
 
 * Drop down select menu to choose country. 
-1. Check size  of elementis suitable and responsive across devices.
+1. Check size  of element is suitable and responsive across devices.
 2. Check media query is triggered to alter select text on smaller devices.
-3. Check option values for countries are congruent as within `var countries` in Google Maps API.   
+3. Check option values for countries are congruent as with `var countries` in Google Maps API.   
 
 * Auto zoom to country of interest.
 1. Check initMap function is being called sucessfully with no console errors.
-2. Check default country is set to UK.
-3. Trial and error map zoom rates for suitability.  
-4. Test each option value navigates to its relevant country.
-5. Test 'All' will result in a world map being displayed.
-6. Check size of element is suitable across devices.
-7. Check media query is triggered to resize element on smaller devices.
+2. Check element id `country` in index.html is is passed to `setAutoCompleteCountry` function correctly in maps.js.
+3. Check default country is set to UK when the site initially loads.
+4. Trial and error map zoom rates for suitability.  
+5. Test each option value navigates to its relevant country.
+6. Test 'All' will result in a world map being displayed.
+7. Check size of element is suitable across devices.
+8. Check media query is triggered to resize element on smaller devices.
 
 * Input element to enter city, which autocompletes via the Google Maps API.
 1. Check element id `locator` in index.html is passed to `autocomplete` function correctly in maps.js.
@@ -159,22 +160,47 @@ Four unused variables
 5. Check media query is triggered to resize element on smaller devices.
 
 * Point of interest select menu.
-* Auto populate markers on map for POI chosen.
-* Auto populate results of POI into a separate list in the results box.
+1. Check element id `points` in index.html is passed to `searchPoints` function correctly in maps.js.
+2. Ensure option values exactly match supported place types as per Google Places API.
+3. Check console for errors.
+3. Check size of element is suitable across devices.
+4. Check media query is triggered to resize element on smaller devices.
 
-*General
+* Auto populate markers on map for POI chosen.
+1. Check POI returned is consistent with POI chosen.
+2. Markers that populate should be green as in `var MARKER_PATH`.
+3. Check alert box is activated if no places are found in the area selected.
+
+* Auto populate results of POI into a separate list in the results box.
+1. Check element id `results` in index.html is passed to `addResult` function correctly in maps.js.
+2. Check display of table is set to `none` until results are actually generated.
+3. Check styles are consitent in the results table as per the rest of the site.
+4. Check `infoWindow` function triggers pop up with POI information when clicked within the results table.
+5. Check size of element is suitable across devices.
+6. Check media query is triggered to resize element on smaller devices.
+
+* General
 
 1. Check page loads quickly across browsers and devices.
 2. Trial and error colours and styling that work well together and fit with the theme of the site.
-3. All elements checked for resposniveness across the following devices:
-### Mobiles    
+3. All elements checked for responsiveness across the following devices:
+-Mobiles    
 Pixel 2/XL  
 iPhone 5/SE/6/7/8  
 iPhone 6/7/8+  
 iPhone X  
 Galaxy S5/S9/S9+    
-### Tablets    
+- Tablets    
 iPad/iPad Pro    
+
+## Cross Browser Testing
+
+Chrome - 80.3% of users - [W3 Schools - April 2019 stats.](https://www.w3schools.com/browsers/default.asp)  Version 74.0.3729.131 - no errors or issues found.  
+
+
+Firefox - 9.6% of users - [W3 Schools - April 2019 stats.](https://www.w3schools.com/browsers/default.asp) Quantum 67.0 - no errors or issues found.
+
+Safari 3.3% of users - [W3 Schools - April 2019 stats.](https://www.w3schools.com/browsers/default.asp) Version 12 - no errors or issues found.  
 
 ## User Story Testing
 
@@ -184,11 +210,13 @@ countries or they can simply choose 'All'. When the user selects one of the opti
 2.	As a user, I want to be presented with various points of interest that I might need to see to make my night a success. This should include the obvious bars and clubs that I may visit and also various shopping options, beauty salons and hair salons should I want to prepare my look for my night. I also want to be able to see hotels if I am travelling to that city and wish to stay over.
 - Users are presented with a simple select list of 8 points of interest that fit in with the site's theme. Upon selecting the POI, the `searchPoints` function is called and tells the Google Places API to find the POIs within the bounds of the map. This was tested by ensuring that firstly the option values were entered exactly as per the API documentation. Secondly, that the `select` `id="points"` was passed correctly to the `searchPoints` function and thirdly, by manual back and forth testing of each value whilst monitoring Chrome Dev Tools JS Console to check for any errors or issues.  
 3.	As I user, once I have chosen the country and city I am interested in, as I select my point of interest I want to see these populated on the map and the results presented in a simple list.
+- As the POI is selected, green markers should populate the map space and also the hidden results table should appear and should also be populated with the same results. When the results are a clicked an info window should be triggered with POI information. If no POIs were found for the specific area chosen a JS pop up window should alert the user that no results were found.
 4.	As a user, I want a clean and simple interface which is easy to navigate.  
+- Users were given an easy, one page application with simple and intuitive design with limited but powerful options. The most common path for the site would be 'Choose a Country' > Choose a City > Point of Interest with the relevant results being populated accordingly both on the map and in the results table.
 
 ## Deployment
 
-The site is deployed live via GitHub Pages, directly from the master branch, and can be viewed [here](https://stephenjblair.github.io/ifed-project/).
+The site is deployed live via GitHub Pages, directly from the master branch, and can be viewed [here](https://stephenjblair.github.io/ifed-project/). To run locally, use `git clone` `https://github.com/stephenjblair/ifed-project` into a terminal window. To end, use `git remote rm origin`.
 
 ## Credits
 ### Content
