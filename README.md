@@ -1,6 +1,9 @@
 # Interactive Front End Development Project 02  
 This project is called 'Party Safari'. A simple, one-page application that integrates the Google Maps and Google Places APIs to allow the user to plan a night out in a city of their choice.
 
+## Live Demo
+The site can be viewed [here](https://stephenjblair.github.io/ifed-project/)
+
 
 ## User Stories
 
@@ -210,7 +213,7 @@ countries or they can simply choose 'All'. When the user selects one of the opti
 2.	As a user, I want to be presented with various points of interest that I might need to see to make my night a success. This should include the obvious bars and clubs that I may visit and also various shopping options, beauty salons and hair salons should I want to prepare my look for my night. I also want to be able to see hotels if I am travelling to that city and wish to stay over.
 - Users are presented with a simple select list of 8 points of interest that fit in with the site's theme. Upon selecting the POI, the `searchPoints` function is called and tells the Google Places API to find the POIs within the bounds of the map. This was tested by ensuring that firstly the option values were entered exactly as per the API documentation. Secondly, that the `select` `id="points"` was passed correctly to the `searchPoints` function and thirdly, by manual back and forth testing of each value whilst monitoring Chrome Dev Tools JS Console to check for any errors or issues.  
 3.	As I user, once I have chosen the country and city I am interested in, as I select my point of interest I want to see these populated on the map and the results presented in a simple list.
-- As the POI is selected, green markers should populate the map space and also the hidden results table should appear and should also be populated with the same results. When the results are a clicked an info window should be triggered with POI information. If no POIs were found for the specific area chosen a JS pop up window should alert the user that no results were found.
+- As the POI is selected, green markers should populate the map space and also the hidden results table should appear and should also be populated with the same results. When the results are a clicked an info window should be triggered with POI information. If no POIs were found for the specific area chosen a JS pop up window should alert the user that no results were found. JS console checked for errors.
 4.	As a user, I want a clean and simple interface which is easy to navigate.  
 - Users were given an easy, one page application with simple and intuitive design with limited but powerful options. The most common path for the site would be 'Choose a Country' > Choose a City > Point of Interest with the relevant results being populated accordingly both on the map and in the results table.
 
